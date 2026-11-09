@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "totemindicator",
+  "version": "${version}",
+  "name": "Totem Indicator",
+  "description": "Обводка тотемов Infinity (зелёный), Stinger (красный) и Eternity (фиолетовый) у вас и метка у игроков с тотемом в руке.",
+  "authors": ["You"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.totemindicator.TotemIndicatorClient"]
+  },
+  "mixins": [
+    { "config": "totemindicator.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
